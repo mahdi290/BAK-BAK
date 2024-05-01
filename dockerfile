@@ -1,5 +1,10 @@
 FROM openjdk:21
 
+
+# Install Maven
+RUN apt-get update && \
+    apt-get install -y maven
+
 WORKDIR /app
 
 # Copy the Maven project files
